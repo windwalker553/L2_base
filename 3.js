@@ -8,9 +8,9 @@ function whatCentury(year)
   if (century >= 11 && century <= 13) {
     return century + "th";
   }
-  else if (century % 10 === 1) suf = "st";
-  else if (century % 10 === 2) suf = "nd";
-  else if (century % 10 === 3) suf = "rd";
+  else if (century % 10 == 1) suf = "st";
+  else if (century % 10 == 2) suf = "nd";
+  else if (century % 10 == 3) suf = "rd";
 
   return century + suf;
 }
