@@ -14,8 +14,8 @@ Array.prototype.sum = function()
   let total = 0;
 
   for (let i = 0; i < this.length; i++) {
-    const x = this[i];
-    total = total + x; 
+    let x = this[i];
+    total += x; 
   }
 
   return total;
