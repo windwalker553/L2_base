@@ -11,7 +11,14 @@ Array.prototype.cube = function()
 
 Array.prototype.sum = function() 
 {
-  return this.reduce((total, x) => total + x, 0);
+  let total = 0;
+
+  for (let i = 0; i < this.length; i++) {
+    const x = this[i];
+    total = total + x; 
+  }
+
+  return total;
 };
 
 Array.prototype.average = function() 
